@@ -95,20 +95,76 @@ textarea {
 body {
     padding-top: 60px;
     padding-bottom: 40px;
+    font-family: 'Sintony', sans-serif;
+    color: #34495E;
+}
+.articles p:first-letter{
+    font-size:30px;
 }
 .sidebar-nav {
     padding: 9px 0;
 }
 .navbar-inverse .navbar-inner {
-    background-color: #3498DB;
+    background-color: #34495E;
     background-image: none;
     border-color: #2980B9;
 }
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+    color: #ECF0F1;
+}
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+    background-color: #2980B9;
+    color: #FFFFFF;
+}
+.navbar-inverse .brand {
+    color: #FFFFFF;
+}
+.hero-unit {
+    background-color: #3498db;
+    color: #ECF0F1;
+}
+.btn {
+    background-color: #3498db;
+    background-image: none;
+    color: #ECF0F1;
+    text-shadow: none;
+    border: 1px solid #3498db;
+    box-shadow: none;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+    color: #ECF0F1;
+}
+.btn-primary {
+    background-color: #34495E;
+    background-image: none;
+    border: 1px solid #34495E;
+    box-shadow: none;
+    color: #ECF0F1;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+}
+.nav-list > li > a, .nav-list .nav-header  {
+    color: #ECF0F1;
+    text-shadow: none;
+}
+.nav > li > a:hover {
+    background-color: #2980B9;
+}
 
-
-
-
-
+.well {
+    background-color: #34495E;
+    border: 0 none;
+    text-shadow: none;
+}
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+    background-color: #2980B9;
+    color: #FFFFFF;
+    text-shadow: none;
+}
 
 
 
