@@ -20,7 +20,6 @@ textarea {
 
 body {
     font-size: 1em;
-    line-height: 1.4;
 }
 
 /*
@@ -93,8 +92,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.sidebar-nav {
+    padding: 9px 0;
+}
+.navbar-inverse .navbar-inner {
+    background-color: #3498DB;
+    background-image: none;
+    border-color: #2980B9;
+}
 
 
 
