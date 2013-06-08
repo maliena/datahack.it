@@ -98,7 +98,7 @@ body {
     font-family: 'Sintony', sans-serif;
     color: #34495E;
 }
-.articles p:first-letter{
+.articles p:first-letter, .single p:nth-child(2):first-letter {
     font-size:30px;
 }
 .sidebar-nav {
