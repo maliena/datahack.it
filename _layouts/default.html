@@ -6,15 +6,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>{{ page.title }} - datahack:it!</title>
+        <meta name="description" content="{{ page.description }}">
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="{{ site.domain }}/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ site.domain }}/css/main.css">
+        <link rel="stylesheet" href="{{ site.domain }}/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="{{ site.domain }}/css/syntax.css">
         <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -26,10 +27,9 @@
         <header class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
-                    <a class="brand" href="#"><span class="blue">datahack</span>:it!</a>
+                    <a class="brand" href="{{ site.domain }}" title="{{ site.title }}"><span class="blue">datahack</span>:it!</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -37,44 +37,16 @@
                 </div>
             </div>
         </header>
-
         <div class="container-fluid">
             <div class="row-fluid">
                 <section class="span9">
-                    <div class="row-fluid">
-                        <div class="span12 single">
-                            <h1>Heading</h1>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        </div>
-                    </div>
+                  {{ content }}
+                  {% include pagination.html %}
                 </section>
-                <aside class="span3">
-                    <div class="well sidebar-nav">
-                        <ul class="nav nav-list">
-                            <li class="nav-header">Tutorials &amp; Code Snippets</li>
-                            <li class="active"><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-nav">
-                        <ul class="nav nav-list">
-                            <li class="nav-header">Recent Posts</li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                        </ul>
-                    </div>
-                </aside>
+                {% include aside.html %}
             </div>
             <hr />
-
-            <footer>
-                <p><b>datahack:it!</b> is written with lots of love and <a rel="no-follow" href="http://en.wikipedia.org/wiki/Club-Mate">Club Mate</a> by <a href="http://jan.brennenstuhl.me">Jan Brennenstuhl</a>.<br />the site runs using Jekyll and Bootstrap on Github Pages.</p>
-            </footer>
+            {% include footer.html %}
         </div>
 
 

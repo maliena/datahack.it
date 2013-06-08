@@ -1,19 +1,12 @@
 ---
 layout: default
-title: Programming Tutorials &amp; Code Snippets
+title: update
 description:
 ---
-
-{% if paginator.next_page == 2 %}
-<div class="hero-unit">
-    <h1>Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
-{% endif %}
-
+<h1>{{ page.title }} Tutorials &amp; Code Snippets</h1>
 <div class="row-fluid articles">
-    {% for post in paginator.posts %}
+
+    {% for post in site.categories[page.title]  %}
         <div class="span4">
             <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
             <p>{{ post.description | truncatewords:40 | strip_html }}</p>

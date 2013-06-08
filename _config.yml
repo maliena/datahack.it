@@ -1,0 +1,10 @@
+name: datahack:it!
+title: Datahack:it - Programming Tutorials &amp; Code Snippets
+pygments: true
+permalink: title
+paginate: 3
+domain: http://127.0.0.1:4000
+paginate_path: ":num"
+
+
+disqus_shortname: jbspeakr

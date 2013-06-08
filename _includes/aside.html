@@ -1,0 +1,18 @@
+<aside class="span3">
+    <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+            <li class="nav-header">Tutorials &amp; Code Snippets</li>
+            {%  for category in site.categories %}
+              <li><a href="/categories/{{ category[0] }}.html" title="{{ category[0] }}">{{ category[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="sidebar-nav">
+        <ul class="nav nav-list">
+            <li class="nav-header">Recent Posts</li>
+            {% for post in site.posts limit:5 %}
+              <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</aside>
