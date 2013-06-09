@@ -17,7 +17,7 @@ description:
         <div class="span4">
             <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
             <p>{{ post.description | truncatewords:40 | strip_html }}</p>
-            <p><a class="btn" href="{{ post.url }}">Read on &raquo;</a></p>
+            <p><a class="btn" href="{{ post.url }}"><b>Read</b> on</a></p>
         </div>
         {% assign mod = forloop.index|modulo:3 %}
         {% if mod == 0 %}
