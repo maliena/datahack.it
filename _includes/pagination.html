@@ -5,12 +5,14 @@
             {% if paginator.previous_page == 1 %}
                 <a class="btn" href="/">{{ paginator.previous_page }}</a>
             {% else %}
+                <a class="btn" href="/">1</a>
+                </div><div class="btn-group">
                 <a class="btn" href="{{ paginator.previous_page_path }}">{{ paginator.previous_page }}</a>
             {% endif %}
         {% endif %}
         <button class="btn active">{{ paginator.page }}</button>
         {% if paginator.next_page %}
-            <button class="btn">{{ paginator.next_page }}</button>
+            <a class="btn" href="{{ paginator.next_page_path }}">{{ paginator.next_page }}</a>
         {% endif %}
     </div>
 </div>
