@@ -107,6 +107,15 @@ a {
 a:hover {
     color: #16a085;
 }
+.single h3 {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    font-size: small;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+}
 pre {
     background-color: #ECF0F1;
     border: 1px solid #ECF0F1;
@@ -245,7 +254,7 @@ aside {
     text-align: right;
 }
 .highlight {
-    margin: 15px 0;
+    margin: 0 0 15px;
 }
 #disqus_thread {
     background-color: #ecf0f1;
