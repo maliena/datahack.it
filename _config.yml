@@ -3,7 +3,7 @@ title: Datahack:it - Programming Tutorials &amp; Code Snippets
 pygments: true
 permalink: :title.html
 paginate: 3
-domain: http://127.0.0.1:4000
+domain: http://www.datahack.it
 paginate_path: ":num"
 
 
