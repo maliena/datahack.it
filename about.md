@@ -2,7 +2,7 @@
 layout: page
 title: About datahack:it!
 date:   2013-06-08 20:29:16
-description:
+description: Often young hackers, amateur programmers and programming newcomers need a helping hand. datahack:it aims to help with code snippets about open data formats!
 ---
 
 ## Start hacking data!

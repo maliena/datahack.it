@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 date:   2013-06-08 20:29:16
-description:
+description: Hi. My name is Jan Brennenstuhl and this is my code snippet sharing project datahack:it!
 ---
 
 ## Get in touch!!
