@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Developer: Jan Brennenstuhl
+    Site: http://jan.brennenstuhl.me
+    Twitter: @jbspeakr
+    Location: Berlin, Germany.
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Bootstrap
+    Jekyll
+    Github Pages
